@@ -1,0 +1,202 @@
+  @font-face {
+    font-family: "genos";
+    src: url(../assets/fuentes/Genos-ExtraLight.ttf);
+  }
+  
+  @font-face {
+    font-family: "genos-cursiva";
+    src: url(../assets/fuentes/Genos-ExtraLightItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: "genos-negrita";
+    src: url(../assets/fuentes/Genos-SemiBoldItalic.ttf);
+  }
+  
+  body {
+    margin: 0px;
+    background: radial-gradient(ellipse at center, rgba(83, 146, 178, 0.82) 3%, rgba(71, 119, 144, 0.82) 24%, rgba(48, 67, 76, 1) 65%, rgba(35, 36, 37, 1) 89%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: genos-cursiva, sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+  }
+  
+  .container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .header__title {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding-bottom: 0.4rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px 20px gray;
+    font-family: genos-negrita;
+    letter-spacing: 0.05rem;
+    font-size: 3rem;
+  }
+  /* Capa para toda la configuaración con el paading para todos */
+  
+  .config {
+    margin: 0;
+    padding: 0 100px;
+  }
+  /* Configuaración de los tamaños, imagenes ayuda y tiempo */
+  
+  .config-size,
+  .config-card,
+  .config-help,
+  .config-time {
+    margin-bottom: 2.5rem;
+    box-shadow: 0 2px 2px gray;
+  }
+  
+  .config-size__title,
+  .config-card__title,
+  .config-help__title,
+  .config-time__title {
+    text-align: center;
+    background-color: rgba(97, 189, 218, 0.644);
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.075rem;
+  }
+  
+  .config-size__body,
+  .config-card__body,
+  .config-help__body,
+  .config-time__body,
+  .finjuego__body,
+  .juego__container {
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+  .juego__container {
+    margin: 15px 0 30px;
+  }
+  
+  .finjuego__body {
+    margin: 15px 0 30px;
+    box-shadow: 2px 2px 20px gray;
+    color: lawngreen
+  }
+  
+  .config-size__radio,
+  .config-time__radio,
+  .config-help__radio {
+    margin-left: 1.5rem;
+    border: 0;
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  
+  .config-size__text {
+    margin-left: 0.2rem;
+  }
+  /* Configuración de las cartas */
+  
+  .config-card__card,
+  .container-carta-juego {
+    width: 90px;
+    height: 130px;
+    margin: 5px 16px 0 0;
+    box-shadow: 0px 2px 2px #999;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  
+  .config-card__img,
+  .img-carta-juego {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .config-card__img {
+    filter: grayscale(90%);
+  }
+  
+  .config-card__img:hover {
+    filter: none;
+    outline: 4px solid rgb(32, 243, 4);
+  }
+  /* Estilos para los hover y los elementos seleccionados*/
+  
+  span:hover {
+    color: rgb(32, 243, 4);
+  }
+  
+  .config-card__img:hover,
+  .carta-seleccionada {
+    outline: 4px solid rgb(32, 243, 4);
+    filter: none;
+  }
+  /* Estilos para cuando tenemos selecionado el numero de cartas, el tiempo o el nivel de ayuda */
+  
+  .seleccionado {
+    color: rgb(32, 243, 4);
+  }
+  /* Estilos del juego */
+  
+  .juego__title {
+    text-align: center;
+    background-color: rgba(97, 189, 218, 0.644);
+    margin: 0;
+    font-size: 1.7rem;
+    letter-spacing: 0.075rem;
+  }
+  /* Botones para comenzar a jugar, comprobar, nueva partida  */
+  
+  .btn-validar,
+  .btn-comprobar,
+  .btn-nueva-partida {
+    outline: 1px solid rgba(75, 231, 61, 0.644);
+    border-radius: 5px;
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .texto-boton {
+    display: block;
+    letter-spacing: 0.1em;
+    color: white;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .texto-boton:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white
+  }
+  
+  .texto-ganador {
+    color: rgb(206, 36, 78);
+  }
+  
+  .borde-rojo,
+  .error {
+    outline: 4px solid rgb(236, 7, 7);
+    border-radius: 0.25rem;
+  }
+  
+  .rojo {
+    background-color: rgba(189, 52, 52, 0.6);
+  }

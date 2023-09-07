@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <title>No repetir....</title>
+</head>
+
+
+
+
+<body>
+  <div class="container" id="contenedor">
+
+    <header class="header">
+      <h1 id="header_title" class="header__title">Juego de las Parejas</h1>
+    </header>
+
+
+    <!-- --------------CONFIGURADOR------------------------------- -->
+    <!-- Para la configuración de los tamaños y de las imagenes para las cartas-->
+
+    <main id="configurador" class="config">
+      <!-- Configuracion de numero de cartas con que se va a jugar-->
+      <section id="configuracion_tama" class="config-size">
+        <h2 class="config-size__title">Selecciona el número de cartas:</h2>
+        <form id="visor_tama" class="config-size__body">
+          <input type="radio" class="config-size__radio" name="tama" value="10"><span class="config-size__text">10</span>
+          <input type="radio" class="config-size__radio" name="tama" value="12"><span class="config-size__text">12</span>
+          <input type="radio" class="config-size__radio" name="tama" value="14"><span class="config-size__text">14</span>
+          <input type="radio" class="config-size__radio" name="tama" value="16"><span class="config-size__text">16</span>
+          <input type="radio" class="config-size__radio" name="tama" value="18"><span class="config-size__text">18</span>
+          <input type="radio" class="config-size__radio" name="tama" value="20"><span class="config-size__text">20</span>
+        </form>
+      </section>
+
+      <!-- Configuracion de la imagen de la carta con la que se va a  jugar-->
+      <section id="configuracion_cartas" class="config-card">
+        <h2 class="config-card__title">Selecciona la imagen de la carta:</h2>
+        <div id="config_card_body" class="config-card__body">
+          <!-- Aqui van las imagenes de las cartas para seleccionar 
+                            la carta con la que se va a jugar
+                        Utiliza el elemento padre visor_imagenes_carta-->
+        </div>
+      </section>
+
+      <!--Configuaracion del tiempo de juego-->
+      <section id="tiempo" class="config-time">
+        <!-- Para hacer aparecer y desaparecer la capa ayuda-->
+        <h2 class="config-time__title">Selecciona el tiempo de juego:</h2>
+        <form id="visor_tiempo" class="config-time__body">
+          <input type="radio" class="config-time__radio" name="tiempo" value="10">
+          <span class="config-time__text"> 10 Segundos</span>
+          <input type="radio" class="config-time__radio" name="tiempo" value="20">
+          <span class="config-time__text"> 20 Segundos</span>
+          <input type="radio" class="config-time__radio" name="tiempo" value="30">
+          <span class="config-time__text"> 30 Segundos</span>
+          <input type="radio" class="config-time__radio" name="tiempo" value="40">
+          <span class="config-time__text"> 40 Segundos</span>
+        </form>
+
+      </section>
+
+      <!--Configuaracion del nivel de ayuda del usuario-->
+      <section id="ayuda" class="config-help">
+        <!-- Para hacer aparecer y desaparecer la capa ayuda-->
+        <h2 class="config-help__title">Selecciona el nivel de ayuda:</h2>
+        <form id="visor_ayuda" class="config-help__body">
+          <input type="radio" class="config-size__radio" name="ayuda" value="alto">
+          <span class="config-help__text"> Alto</span>
+          <input type="radio" class="config-size__radio" name="ayuda" value="medio">
+          <span class="config-help__text"> Medio</span>
+          <input type="radio" class="config-size__radio" name="ayuda" value="sin">
+          <span class="config-help__text"> Sin ayuda</span>
+        </form>
+      </section>
+    </main>
+    <!-- --------------------FIN CONFIGURACION------------------------ -->
+
+
+
+
+    <!-- -----------------------JUEGO--------------------------------- -->
+    <!--Capa donde se van a mostrar las cartas con las que vamos a jugar-->
+    <!-- Para hacer aparecer y desaparecer la capa juego-->
+    <section id="juego" class="juego">
+      <h2 class="juego__title">No puedes tener dos imagenes iguales:</h2>
+      <div id="visor_imagenes_juego" class="juego__container ">
+        <!-- Aqui también se van a ver las fotos para que el usuario juegue
+                        Utiliza el elemento padre visor_imagenes_juego-->
+      </div>
+    </section>
+    <!-- --------------------------FIN JUEGO------------------------ -->
+
+
+
+    <!-- --------------------------FINALIZAR JUEGO------------------------ -->
+    <!--Capa donde se va a mostrar la finalización de la partida-->
+    <!-- Para hacer aparecer y desaparecer la capa finjuego-->
+    <section id="finjuego">
+      <div class="finjuego__body">
+        <h2 class="texto-finjuego">Has Finalizado el Juego con Exito. FELICIDADES!!!</h2>
+      </div>
+    </section>
+    <!-- ----------------------FIN FINALIZAR JUEGO------------------- -->
+
+
+
+    <!-- ----------------------BOTONERAS------------------- -->
+    <!-- Para los botones-->
+    <footer id="botones" class="configuracion-botones">
+      <!-- Para hacer aparecer y desaparecer el boton de jugar y ... -->
+      <button id="btn_validar" class="btn-validar"> 
+				<span class="texto-boton">Validar Configuración</span> 
+            </button>
+      <!-- Para hacer aparecer y desaparecer el boton comporbar y  ... -->
+      <button id="btn_comprobar" class="btn-comprobar"> 
+				<span class="texto-boton">Comprobar Parejas</span> 
+            </button>
+      <button id="btn_nueva_partida" class="btn-nueva-partida"> 
+				<span class="texto-boton">Otra partida????</span> 
+            </button>
+    </footer>
+    <!--fin del pie-->
+    <!-- ----------------------FIN BOTONERAS-------------------------- -->
+  </div>
+  <!-- Fin del container -->
+  <script src="js/script.js "></script>
+</body>
+
+</html>
